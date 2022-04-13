@@ -8,13 +8,18 @@ export interface FontState {
 }
 
 const initialState: FontState = {
-  font: [],
+  font: undefined,
 };
+
+// export const receiptReducer = createReducer<ReceiptState, ReceiptAction>(
+//   initialState
+// )
 
 export const fontReducer = createReducer<FontState, FontAction>(
   initialState
 ).handleAction(getFontDataAction.success, (state, action) =>
   produce(state, (draft) => {
+    console.log(action);
     draft.font = action.payload;
   })
 );

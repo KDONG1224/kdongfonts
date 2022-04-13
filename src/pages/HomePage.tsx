@@ -1,9 +1,11 @@
+import { Fontcontainer } from "container";
 import React from "react";
 
 const HomePage = () => {
   return (
     <div>
-      <div>HomePage</div>
+      <div style={{ marginBottom: "300px" }}>HomePage</div>
+      <Fontcontainer />
     </div>
   );
 };

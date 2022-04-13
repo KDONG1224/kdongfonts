@@ -9,7 +9,7 @@ export interface iconsProps {
 }
 
 export interface WebFontCrossProps {
-  icons: iconsProps[];
+  icons: iconsProps;
   TTF: string[];
   OTF: string[];
   WOFF: string[];
@@ -19,18 +19,18 @@ export interface WebFontCrossProps {
 }
 
 export interface ResponseFont {
-  id: string;
-  title: string;
+  id?: number;
+  title?: string;
   koKR?: string;
   enUS?: string;
-  fontTypes: string;
-  company: string;
-  style: string;
-  extension: string;
-  thumbnauls: string;
+  fontTypes?: string;
+  company?: string;
+  style?: string;
+  extension?: string;
+  thumbnails?: string;
   downloadLink?: string;
-  webType: string[];
-  license: string[];
-  copyRight: string[];
-  webfontCross: WebFontCrossProps[];
+  webType?: string[];
+  license?: string[];
+  copyRight?: string[];
+  webfontCross?: WebFontCrossProps[];
 }
