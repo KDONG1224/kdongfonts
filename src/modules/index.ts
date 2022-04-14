@@ -10,6 +10,7 @@ export interface Indexable {
 }
 
 export interface StoreState {
+  [x: string]: any;
   router: RouterState;
   fontState: FontState;
 }

@@ -1,12 +1,16 @@
-import { Fontcontainer } from "container";
-import React from "react";
+import React from 'react';
+import { MainLayout } from 'layouts';
 
 const HomePage = () => {
   return (
-    <div>
-      <div style={{ marginBottom: "300px" }}>HomePage</div>
-      <Fontcontainer />
-    </div>
+    <MainLayout headerType='main'>
+      <iframe
+        title='KDONG'
+        src='https://rice-price-kdong.web.app/'
+        width='100%'
+        height='100%'
+      />
+    </MainLayout>
   );
 };
 
