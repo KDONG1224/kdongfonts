@@ -78,7 +78,7 @@ interface MainNavProps {
 const StyledMainNavMenu = styled(Menu)`
   .new-menu {
     display: inline-block;
-    background: red;
+    background: rgb(165, 213, 250);
     border-radius: 50%;
     width: 25px;
     height: 25px;
