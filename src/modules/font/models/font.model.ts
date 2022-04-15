@@ -23,13 +23,18 @@ export interface ResponseFont {
   title?: string;
   koKR?: string;
   enUS?: string;
+  desc?: string;
   fontTypes?: string;
   company?: string;
   style?: string;
   extension?: string;
   thumbnails?: string;
   downloadLink?: string;
-  webType?: string[];
+  webType?: {
+    fontFamily: string;
+    link: string;
+    import: string;
+  };
   license?: string[];
   copyRight?: string[];
   webfontCross?: WebFontCrossProps[];

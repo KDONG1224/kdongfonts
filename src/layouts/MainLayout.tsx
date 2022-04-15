@@ -129,7 +129,7 @@ export const MainLayout = ({ children, ...props }: MainLayoutProps) => {
             <Row>
               <Col>
                 <LogoBox onClick={handle}>
-                  FONT-WORLD
+                  {collapsed ? 'FONT WORLD' : 'FONT-WORLD'}
                   <br />
                   {collapsed ? '' : 'KDONG'}
                 </LogoBox>
@@ -137,7 +137,7 @@ export const MainLayout = ({ children, ...props }: MainLayoutProps) => {
                   <ProfileBox>
                     <Row justify='center'>
                       <Col>
-                        <ProfileBoxText>"최고 관리자"</ProfileBoxText>
+                        <ProfileBoxText>"제작자"</ProfileBoxText>
                       </Col>
                       <Col>
                         <ProfileBoxText fontSize='21px'>강동재</ProfileBoxText>
@@ -185,6 +185,7 @@ export const MainLayout = ({ children, ...props }: MainLayoutProps) => {
                   onClick={handleToggle}
                 />
               </Col>
+              <Col>만드는중... (update: 22. 04. 15)</Col>
               <Col>
                 <Search
                   placeholder='input search text'
