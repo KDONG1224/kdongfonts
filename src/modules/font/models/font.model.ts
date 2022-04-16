@@ -19,7 +19,7 @@ export interface WebFontCrossProps {
 }
 
 export interface ResponseFont {
-  id?: number;
+  id?: number | string;
   title?: string;
   koKR?: string;
   enUS?: string;
@@ -31,11 +31,29 @@ export interface ResponseFont {
   thumbnails?: string;
   downloadLink?: string;
   webType?: {
-    fontFamily: string;
-    link: string;
-    import: string;
+    fontFamily?: string;
+    link?: string;
+    import?: string;
   };
   license?: string[];
   copyRight?: string[];
   webfontCross?: WebFontCrossProps[];
+}
+export interface ResponseHomeFont {
+  id: number | string;
+  title: string;
+  koKR: string;
+  enUS: string;
+  desc: string;
+  fontTypes: string;
+  company: string;
+  style: string;
+  extension: string;
+  thumbnails: string;
+  downloadLink?: string;
+  webType: {
+    fontFamily: string;
+    link: string;
+    import: string;
+  };
 }
