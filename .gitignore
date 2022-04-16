@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/src
+/.firebase
 /.pnp
 .pnp.js
 
@@ -17,6 +19,12 @@
 .env.development.local
 .env.test.local
 .env.production.local
+package.json
+firebase.json
+tsconfig.json
+prettier.config.js
+package-lock.json
+craco.config.js
 
 npm-debug.log*
 yarn-debug.log*
