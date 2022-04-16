@@ -185,7 +185,7 @@ export const MainLayout = ({ children, ...props }: MainLayoutProps) => {
                   onClick={handleToggle}
                 />
               </Col>
-              <Col>만드는중... (update: 22. 04. 15)</Col>
+              <Col>만드는중... (update: 22. 04. 16)</Col>
               <Col>
                 <Search
                   placeholder='input search text'
