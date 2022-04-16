@@ -1,6 +1,6 @@
-import { ResponseFont } from 'modules/font';
+import { ResponseHomeFont } from 'modules/font';
 
-export const homeFont: ResponseFont[] = [
+export const homeFont: ResponseHomeFont[] = [
   {
     id: 1,
     title: '야놀자 야체(Yanolja Yache)11',

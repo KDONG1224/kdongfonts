@@ -79,6 +79,7 @@ const StyledMainNavMenu = styled(Menu)`
   .new-menu {
     display: inline-block;
     background: rgb(165, 213, 250);
+    color: #000 !important;
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -87,6 +88,10 @@ const StyledMainNavMenu = styled(Menu)`
     font-weight: bold;
     animation: ${opacityAnimation} 2s 2s infinite linear,
       ${pauseAnimation} 4s infinite linear;
+  }
+  .ant-menu-dark .ant-menu-item-selected .ant-menu-item-icon + span,
+  .ant-menu-dark .ant-menu-item-selected .anticon + span {
+    color: #000 !important;
   }
 `;
 
@@ -307,11 +312,12 @@ export const MainNav = ({ collapsed }: MainNavProps) => {
         뭘 어떻게?
       </Menu.Item>
       <Menu.Item key='3' icon={<ContainerOutlined />}>
-        해야하는지?
+        {/* 현재 : {Date().moment()} */}
+        귀찮아
       </Menu.Item>
-      <SubMenu key='sub1' icon={<MailOutlined />} title='무슨폰트?'>
-        <Menu.Item key='5'>무얼넣어야 하지? 5</Menu.Item>
-        <Menu.Item key='6'>무얼넣어야 하지? 6</Menu.Item>
+      <SubMenu key='sub1' icon={<MailOutlined />} title='UPDATE'>
+        <Menu.Item key='5'>update: 22.04.15</Menu.Item>
+        <Menu.Item key='6'>update: 22.04.16</Menu.Item>
         <Menu.Item key='7'>무얼넣어야 하지? 7</Menu.Item>
         <Menu.Item key='8'>무얼넣어야 하지? 8</Menu.Item>
       </SubMenu>
@@ -319,8 +325,8 @@ export const MainNav = ({ collapsed }: MainNavProps) => {
         <Menu.Item key='9'>무얼넣어야 하지? 9</Menu.Item>
         <Menu.Item key='10'>무얼넣어야 하지? 10</Menu.Item>
         <SubMenu key='sub3' title='Submenu'>
-          <Menu.Item key='11'>무얼넣어야 하지? 11</Menu.Item>
-          <Menu.Item key='12'>무얼넣어야 하지? 12</Menu.Item>
+          <Menu.Item key='11'>update: 22.04.15</Menu.Item>
+          <Menu.Item key='11'>update: 22.04.16</Menu.Item>
         </SubMenu>
       </SubMenu>
       {/* </Menu> */}
